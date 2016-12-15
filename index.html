@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Ødela han klippern - Soundboard</title>
+		<script src="dist/app.bundle.js" defer></script>
+    <style>
+    body {
+      margin: 0;
+    }
+
+    h1 {
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    #soundboard {
+      background-color: pink;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      overflow: hidden;
+      padding: 1rem;
+      margin: 0 auto;
+    }
+
+    .sound-wrapper {
+      padding: 1rem;
+      opacity: 0;
+      pointer-events: none;
+      flex: 1;
+    }
+
+    button {
+      background-color: cadetblue;
+      color: white;
+      border: 0;
+      padding: 1rem;
+      white-space: nowrap;
+      cursor: pointer;
+      outline: none;
+      font-size: 1.5rem;
+    }
+
+    .loading {
+      color: red;
+      font-size: 2rem;
+      text-align: center;
+      background-color: linen;
+      padding: 2rem;
+    }
+
+    .loaded .sound-wrapper {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .loaded .loading {
+      display: none;
+    }
+    </style>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>Ødela han klippern - Soundboard</h1>
+			</header>
+			<div id="soundboard"></div>
+      <div class="loading">
+        <h2>LOADING</h2>
+      </div>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "der-odela-han-klippern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "closure-compiler-web-loader": "^0.0.2",
+    "eslint": "^3.12.2",
+    "eslint-config-google": "^0.7.1",
+    "eslint-config-tidal": "^1.1.0",
+    "webpack": "beta"
+  },
+  "dependencies": {
+    "google-closure-compiler-js": "^20161201.0.0"
+  }
+}
